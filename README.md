@@ -19,7 +19,7 @@ Este notebook simula un problema de riesgo crediticio: predecir si un cliente ca
 - `OneHotEncoder` para variables categóricas
 - `StandardScaler` para variables numéricas
 
-**Qué hace**
+**Funcionalidad**
 - Genera un dataset sintético de clientes.
 - Realiza análisis exploratorio.
 - Prepara las variables para entrenamiento.
@@ -48,7 +48,7 @@ Este notebook simula transacciones financieras y clasifica si una operación es 
 - Preprocesamiento con `ColumnTransformer`
 - `OneHotEncoder` y `StandardScaler`
 
-**Qué hace**
+**Funcionalidad**
 - Genera un dataset sintético de transacciones.
 - Crea variables de comportamiento transaccional.
 - Entrena un modelo de bosque aleatorio.
@@ -76,7 +76,7 @@ Este notebook agrupa clientes según su comportamiento financiero para descubrir
 - `StandardScaler` para normalización
 - `PCA` para visualización en 2 dimensiones
 
-**Qué hace**
+**Funcionalidad**
 - Genera un dataset sintético de clientes.
 - Escala las variables.
 - Usa el método del codo para elegir el número de clusters.
@@ -103,7 +103,7 @@ Este notebook simula costos diarios de infraestructura cloud y predice el gasto 
 - Medias móviles
 - Métricas `MAE` y `RMSE`
 
-**Qué hace**
+**Funcionalidad**
 - Genera una serie temporal sintética de 3 años.
 - Incorpora tendencia, estacionalidad y eventos especiales.
 - Grafica la evolución histórica.
@@ -129,7 +129,7 @@ Este notebook identifica transacciones anómalas sin usar etiquetas reales de fr
 - `StandardScaler`
 - Scoring de anomalías
 
-**Qué hace**
+**Funcionalidad**
 - Genera transacciones normales y anómalas.
 - Entrena un modelo `Isolation Forest`.
 - Calcula puntajes de anomalía.
@@ -137,52 +137,4 @@ Este notebook identifica transacciones anómalas sin usar etiquetas reales de fr
 - Visualiza outliers por monto y distancia.
 - Ordena registros por mayor nivel de anomalía.
 
----
-
-## Resumen de tecnologías usadas
-
-| Notebook | Problema | Técnica principal | Tipo de aprendizaje |
-|---|---|---|---|
-| `01_prediccion_mora_logistic_regression.ipynb` | Riesgo crediticio | Logistic Regression | Supervisado |
-| `02_deteccion_fraude_random_forest.ipynb` | Fraude transaccional | Random Forest | Supervisado |
-| `03_segmentacion_clientes_kmeans.ipynb` | Segmentación de clientes | KMeans | No supervisado |
-| `04_forecast_finops_prophet_sarimax.ipynb` | Pronóstico de costos cloud | SARIMAX | Series de tiempo |
-| `05_anomaly_detection_transactions_isolation_forest.ipynb` | Detección de anomalías | Isolation Forest | No supervisado |
-
-## Requisitos generales
-
-Los notebooks están desarrollados en Python 3.11 y usan librerías como:
-
-- `numpy`
-- `pandas`
-- `matplotlib`
-- `scikit-learn`
-- `statsmodels`
-
-## Cómo usar
-
-1. Abre cualquiera de los notebooks en Jupyter, VS Code o PyCharm.
-2. Ejecuta las celdas en orden.
-3. Revisa los resultados, métricas y visualizaciones de cada caso.
-
-## Estructura del proyecto
-
-- `01_prediccion_mora_logistic_regression.ipynb`
-- `02_deteccion_fraude_random_forest.ipynb`
-- `03_segmentacion_clientes_kmeans.ipynb`
-- `04_forecast_finops_prophet_sarimax.ipynb`
-- `05_anomaly_detection_transactions_isolation_forest.ipynb`
-- `data/`
-- `models/`
-
-## Objetivo del repositorio
-
-Este proyecto funciona como portafolio de ejemplos de machine learning aplicados a fintech, cubriendo:
-
-- clasificación
-- clustering
-- forecasting
-- detección de anomalías
-- evaluación de modelos
-- interpretación básica de resultados
 
